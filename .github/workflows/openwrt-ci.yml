@@ -95,7 +95,7 @@ jobs:
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_mt7621=y
           CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
-          CONFIG_LINUX_5_4=y
+          
           EOF
           # 固件压缩:
           # cat >> .config <<EOF
@@ -129,52 +129,16 @@ jobs:
           # EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci=y
-          CONFIG_PACKAGE_luci-base=y
-          CONFIG_LUCI_LANG_zh-cn=y
-          CONFIG_PACKAGE_luci-compat=y
-          CONFIG_PACKAGE_luci-mod-admin-full=y
-          CONFIG_PACKAGE_luci-app-accesscontrol=y
-          CONFIG_PACKAGE_luci-app-arpbind=y
-          CONFIG_PACKAGE_luci-app-autoreboot=y
-          CONFIG_PACKAGE_luci-app-ddns=y
-          CONFIG_PACKAGE_luci-app-filetransfer=y
-          CONFIG_PACKAGE_luci-app-firewall=y
-          CONFIG_PACKAGE_luci-app-frpc=y
-          CONFIG_PACKAGE_luci-app-mtwifi=y
-          CONFIG_PACKAGE_luci-app-mwan3=y
-          CONFIG_PACKAGE_luci-app-nlbwmon=y
-          CONFIG_PACKAGE_luci-app-qos=y
-          CONFIG_PACKAGE_luci-app-ramfree=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
-          CONFIG_PACKAGE_luci-app-rclone_INCLUDE_fuse-utils=y
-          CONFIG_PACKAGE_luci-app-sfe=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_UnblockNeteaseMusic_Go=y
-          CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-usb-printer=y
           CONFIG_UnblockNeteaseMusicGo_INCLUDE_GOPROXY=y
-          CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-nlbwmon-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-qos-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-ramfree-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-sfe-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-webadmin-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
           # CONFIG_PACKAGE_luci-app-baidupcs-web=y
         
